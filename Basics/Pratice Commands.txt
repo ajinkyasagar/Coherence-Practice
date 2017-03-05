@@ -1,0 +1,18 @@
+java -Dtangosol.coherence.override=D:\Practice\Coherence\cluster.xml -cp C:\Oracle\Middleware\Oracle_Home\coherence;C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar com.tangosol.net.DefaultCacheServer
+
+java -Dtangosol.coherence.override=cluster.xml -cp D:\Practice\Coherence;C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar com.tangosol.net.DefaultCacheServer
+
+java -cp D:\Practice\Coherence;C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar com.tangosol.net.DefaultCacheServer com.tangosol.net.DefaultCacheServer
+
+Start cluster
+java -jar C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar -Dtangosol.coherence.cluster=cluster_name -Dtangosol.coherence.clusterport=1234
+
+Start command line to interact
+
+java -server -showversion -Dcoherence.distributed.localstorage=false -Dcoherence.distributed.localstorage=false -Dtangosol.coherence.management=all -Dtangosol.coherence.management.remote=true  -cp C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar com.tangosol.net.CacheFactory 
+
+Using the Report Group Configuration File System Property
+java -Dtangosol.coherence.management=all -Dtangosol.coherence.management.report.configuration=my-group.xml -cp D:\Practice\Coherence;C:\Oracle\Middleware\Oracle_Home\coherence\lib\coherence.jar com.tangosol.net.DefaultCacheServer
+
+Using the MBean Configuration File System Property
+java -Dtangosol.coherence.mbeans=my-mbeans.xml -cp COHERENCE_HOME;COHERENCE_HOME\lib\coherence.jar com.tangosol.net.DefaultCacheServer
