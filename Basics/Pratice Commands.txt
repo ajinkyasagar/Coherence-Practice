@@ -16,3 +16,11 @@ java -Dtangosol.coherence.management=all -Dtangosol.coherence.management.report.
 
 Using the MBean Configuration File System Property
 java -Dtangosol.coherence.mbeans=my-mbeans.xml -cp COHERENCE_HOME;COHERENCE_HOME\lib\coherence.jar com.tangosol.net.DefaultCacheServer
+
+
+
+
+
+
+Start Coherence Server
+java -jar D:\Oracleinstallation\coherence\lib\coherence.jar -Dtangosol.coherence.cluster=cluster_name -Dtangosol.coherence.clusterport=1234
